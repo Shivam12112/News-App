@@ -1,10 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@600&family=Charis+SIL&family=Hahmlet:wght@600&family=Ibarra+Real+Nova:wght@400;615&family=Montserrat&family=Old+Standard+TT&family=Raleway&display=swap");
+
 * {
   font-family: 'Andada Pro', serif;
 }
 
-.imgSize
-{
+.imgSize {
   height: 13rem;
 }
- 
+
+.spinnerSize {
+  height: 20rem;
+  width: 20rem;
+}
+
+.section :hover {
+  zoom: 101%;
+}
+
+.selected {
+  border-bottom: 2px red;
+}

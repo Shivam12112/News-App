@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -6,10 +7,10 @@ class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
-              <i class="fa-solid fa-newspaper text-warning me-1"></i> The
-              <span className="text-warning"> News Glory</span>
-            </a>
+            <NavLink className="navbar-brand" to="/">
+              <i className="fa-solid fa-newspaper text-warning me-1"></i> The
+              <span className="text-warning"> News</span>
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
@@ -26,46 +27,65 @@ class Navbar extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
-                    Home
-                  </a>
+                <li>
+                  <NavLink className="nav-link" aria-current="page" to="/">
+                    General
+                  </NavLink>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link active" href="/">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                <li>
+                  <NavLink
+                    className="nav-link "
+                    aria-current="page"
+                    to="/business"
                   >
-                    Dropdown
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
+                    Business
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link "
+                    aria-current="page"
+                    to="/entertainment"
+                  >
+                    Entertainment
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink
+                    className="nav-link "
+                    aria-current="page"
+                    to="/health"
+                  >
+                    Health
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link "
+                    aria-current="page"
+                    to="/science"
+                  >
+                    Science
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link "
+                    aria-current="page"
+                    to="/sports"
+                  >
+                    Sports
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link "
+                    aria-current="page"
+                    to="/technology"
+                  >
+                    Technology
+                  </NavLink>
                 </li>
               </ul>
             </div>
